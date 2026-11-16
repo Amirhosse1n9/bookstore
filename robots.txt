@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /admin-panel.html
+
+Sitemap: https://amirhossein121.github.io/kitabkade/sitemap.xml

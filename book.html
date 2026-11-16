@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>کتاب | کتاب‌کده</title>
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="جزئیات کتاب در کتاب‌کده">
+  <script>try{if(localStorage.getItem("kb_theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="toast" id="toast"><span class="dot"></span><span id="toastText"></span></div>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span>کتاب‌کده</div>
+    <nav class="site-nav">
+      <a href="index.html">صفحه اصلی</a>
+      <a href="books.html">همه کتاب‌ها</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="سبد خرید" id="cartBtn">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap" id="book-root"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="foot-note">© ۱۴۰۴ کتاب‌کده. تمامی حقوق محفوظ است.</span>
+    <nav class="foot-links"><a href="#">پشتیبانی در ایتا</a><a id="adminSlot" hidden></a></nav>
+  </div>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/store.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/gate.js"></script>
+<script src="js/book.js"></script>
+</body>
+</html>

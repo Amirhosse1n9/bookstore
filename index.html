@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>کتاب‌کده | فروشگاه آنلاین کتاب</title>
+  <meta name="description" content="کتاب‌کده — فروشگاه آنلاین کتاب. مرور، جستجو و خرید کتاب‌های رمان، شعر، روانشناسی، تاریخ و کودک با ارسال سریع.">
+  <meta name="keywords" content="فروشگاه کتاب, خرید کتاب آنلاین, کتاب‌کده, کتاب رمان, کتاب فروشی">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://amirhossein121.github.io/kitabkade/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="کتاب‌کده | فروشگاه آنلاین کتاب">
+  <meta property="og:description" content="هر کتابی که به ذهنت برسه، اینجا هست — مرور و خرید کتاب از کتاب‌کده.">
+  <meta property="og:locale" content="fa_IR">
+
+  <script>try{if(localStorage.getItem("kb_theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BookStore",
+    "name": "کتاب‌کده",
+    "description": "فروشگاه آنلاین کتاب با دسته‌بندی‌های متنوع و ارسال سریع"
+  }
+  </script>
+</head>
+<body>
+
+<div class="toast" id="toast"><span class="dot"></span><span id="toastText"></span></div>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span>کتاب‌کده</div>
+    <nav class="site-nav">
+      <a href="index.html" class="active">صفحه اصلی</a>
+      <a href="books.html">همه کتاب‌ها</a>
+    </nav>
+    <div class="header-actions">
+      <div class="search-box">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+        <input type="text" id="headerSearch" placeholder="جستجوی کتاب یا نویسنده...">
+      </div>
+      <button class="icon-btn" aria-label="سبد خرید" id="cartBtn">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="eyebrow">فروشگاه آنلاین کتاب</span>
+        <h1>کتاب بعدی‌ تو <em>اینجاست</em></h1>
+        <p class="lead">رمان، شعر، روانشناسی و کتاب کودک؛ با انتخابی دقیق و خریدی ساده.</p>
+        <div class="hero-cta">
+          <a href="books.html" class="btn btn-primary">مرور کتاب‌ها</a>
+          <a href="#products" class="btn btn-ghost">پرفروش‌های هفته</a>
+        </div>
+      </div>
+      <div class="hero-books" aria-hidden="true">
+        <div class="book b1"><small>رمان</small><b>صد سال<br>تنهایی</b></div>
+        <div class="book b2"><small>روانشناسی</small><b>اتم‌های<br>عادت</b></div>
+        <div class="book b3"><small>پیشنهاد هفته</small><b>ملت عشق</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>پرفروش‌ترین‌های این هفته</h2>
+        <a class="see-all" href="books.html">مشاهده همه</a>
+      </div>
+      <div class="grid" id="home-grid">
+        <div class="empty-state">در حال بارگذاری کتاب‌ها…</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories">
+    <div class="wrap">
+      <div class="section-head"><h2>دسته‌بندی‌ها</h2></div>
+      <div class="cat-grid" id="cat-grid"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="foot-note">© ۱۴۰۴ کتاب‌کده. تمامی حقوق محفوظ است.</span>
+    <nav class="foot-links"><a href="#">پشتیبانی در ایتا</a><a id="adminSlot" hidden></a></nav>
+  </div>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/store.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/gate.js"></script>
+</body>
+</html>

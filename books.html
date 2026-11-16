@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>همه کتاب‌ها | کتاب‌کده</title>
+  <meta name="description" content="مرور کامل کتاب‌های کتاب‌کده با امکان فیلتر بر اساس دسته‌بندی، جستجو و مرتب‌سازی بر اساس قیمت و امتیاز.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://amirhossein121.github.io/kitabkade/books.html">
+  <script>try{if(localStorage.getItem("kb_theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="toast" id="toast"><span class="dot"></span><span id="toastText"></span></div>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span>کتاب‌کده</div>
+    <nav class="site-nav">
+      <a href="index.html">صفحه اصلی</a>
+      <a href="books.html" class="active">همه کتاب‌ها</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="سبد خرید" id="cartBtn">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="17" cy="21" r="1"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-title">
+    <div class="wrap">
+      <h1>همه‌ی کتاب‌ها</h1>
+      <p>مرور کن، فیلتر کن، و کتاب بعدیِ خودت رو پیدا کن.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:12px;">
+    <div class="wrap">
+      <div class="toolbar">
+        <div class="filters" id="filters"></div>
+        <div class="dropdown" id="sortDropdown">
+          <button type="button" class="dd-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span class="dd-label">مرتب‌سازی: <b id="sortLabel">پیش‌فرض</b></span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="dd-menu" role="listbox">
+            <li role="option" data-value="default" class="selected">پیش‌فرض</li>
+            <li role="option" data-value="price-asc">ارزان‌ترین</li>
+            <li role="option" data-value="price-desc">گران‌ترین</li>
+            <li role="option" data-value="rating">بیشترین امتیاز</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="search-box catalog-search">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+        <input type="text" id="searchInput" placeholder="جستجوی کتاب یا نویسنده...">
+      </div>
+
+      <div class="result-count" id="resultCount"></div>
+      <div class="grid" id="book-grid"></div>
+      <div class="load-more" id="loadMoreWrap">
+        <button id="loadMoreBtn">نمایش کتاب‌های بیشتر</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="foot-note">© ۱۴۰۴ کتاب‌کده. تمامی حقوق محفوظ است.</span>
+    <nav class="foot-links"><a href="#">پشتیبانی در ایتا</a><a id="adminSlot" hidden></a></nav>
+  </div>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/store.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/gate.js"></script>
+</body>
+</html>
